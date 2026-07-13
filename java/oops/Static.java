@@ -1,3 +1,10 @@
+//the static keyword is used to create members (variables, methods, blocks, and nested classes) that belong to the class rather than to individual objects.
+//
+
+
+
+
+
 class Student {
 
     // Static Variable
