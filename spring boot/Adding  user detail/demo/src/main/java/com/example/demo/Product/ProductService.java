@@ -25,15 +25,15 @@ public class ProductService {
     //create
     public ProductResponse create(ProductRequest product){
 
-         UserModel user = userRepository.findById(product.getUserId())
-            .orElseThrow(() -> new RuntimeException("User not found " + product.getUserId()));
+         UserModel user = userRepository.findById(product.getUserId()).orElseThrow(() -> new RuntimeException("User not found " + product.getUserId()));
 
         Model model= new Model();
         model.setName(product.getName());
         model.setPrice(product.getPrice());
         model.setQuantity(product.getQuantity());
         model.setUser(user);
-        return toResponse(model);
+        Model saved = repository.save(model);
+        return toResponse(saved);
     }
 
     //createbulkrecord
@@ -90,7 +90,7 @@ public class ProductService {
         product.getName(),
         product.getPrice(),
         product.getQuantity(),
-         product.getUser().getId(),
+        product.getUser().getId(),
         product.getUser().getUsername() 
     );
 

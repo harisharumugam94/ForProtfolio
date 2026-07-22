@@ -11,15 +11,37 @@ public class UserService {
     private  UserRepository userRepository;
 
     public UserResponse register (@RequestBody RegisterRequest body){
+        if (userRepository.existsByUsername(body.getUsername())) 
+            
+            {
+             
+             
+                throw new RuntimeException("Username already taken");
+
+
+            }
+            
+    if (userRepository.existsByEmail(body.getEmail())) 
+        {
+            
+            throw new RuntimeException("Email already registered");
+
+
+        }
+        
+        
+        
+        
         UserModel model = new UserModel();
         model.setUsername(body.getUsername());
         model.setEmail(body.getEmail());
         model.setPassword(body.getPassword());
-        return toResponse(model);
+        return toResponse(userRepository.save(model));
 
 
         
     }
+
 
 
 
