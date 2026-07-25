@@ -1,7 +1,5 @@
 package com.example.demo.user;
-
 import java.util.List;
-
 import com.example.demo.Product.Model;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -25,8 +23,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class UserModel{
-    
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -45,6 +41,6 @@ public class UserModel{
 
     @OneToMany(mappedBy = "user" , cascade = CascadeType.ALL , orphanRemoval = true)
     private List<Model> products;
-    
+
 
 }
