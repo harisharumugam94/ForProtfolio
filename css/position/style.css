@@ -1,0 +1,7 @@
+.para{
+    border: 2px solid;
+    position: fixed;/*absolute,static,relative,sticky*/
+    top:0px;
+    background-color: aqua;
+    z-index:-1;
+}

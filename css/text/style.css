@@ -1,0 +1,11 @@
+p{
+    color:blue;
+    background-color:yellow;
+    text-align:left;
+    text-decoration:underline red;
+    text-transform:capitalize;
+    text-shadow:0px 0px 5px red;
+    line-height:30px;
+    word-spacing:10px;
+
+}

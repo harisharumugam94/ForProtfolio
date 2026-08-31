@@ -1,0 +1,21 @@
+table , td{
+    border:2px solid black;
+}
+table{
+    width: 50%;
+    padding: 10px;
+}
+thead{
+    text-align:center;
+    padding: 10px ;
+
+}
+
+/*tbody td:hover{
+    background-color: aqua;
+}*/
+
+tbody td:nth-child(odd){
+    color: green;
+}
+

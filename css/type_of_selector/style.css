@@ -1,0 +1,24 @@
+p/*THIS IS THE TAG SELECTOR*/{
+    color: darkgoldenrod;
+}
+
+#pp/*THIS IS THE ID SELECTOR*/{
+    color:aquamarine;
+}
+
+.hpd/*THIS IS THE CLASS SELECTOR*/{
+    color: darkseagreen;
+}
+
+*/*THIS IS THE UNIVERSAL SELECTOR */{
+    font-size: medium;
+    font-style: oblique;
+}
+
+h4.hpd/*THIS IS THE SPCIFIC CLASS SELECTOR*/{
+    background-color: crimson;
+}
+
+p , a/*THIS IS THE GROUP OF TAGS SELECTOR*/{
+    background-color: beige;
+}

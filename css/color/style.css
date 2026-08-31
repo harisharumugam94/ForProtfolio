@@ -1,0 +1,26 @@
+
+/*THIS IS THE TYPE OF DECLARATION OF COLOR*/
+h1{
+    color: rgb(245, 73, 39);
+}
+h2{
+    color: hsl(170, 91%, 56%);
+}
+p{
+    color:brown;
+}
+
+h3{
+    color: rgba(245, 39, 214, 0.864);
+
+}
+h4{
+    color: hsla(333, 74%, 44%,0.860);
+
+}
+
+h5{
+    color: cornflowerblue;
+    opacity: 50%;
+
+}
